@@ -1,0 +1,204 @@
+print("Welcome the OFFICIAL Harry Styles Quiz ©")
+print("PLEASE NOTE: Answers are case-sensitive, so start all answers with a capital letter.")
+print("Getting full marks (5/5) in each round will allow you to complete the next round.")
+#==============================================================================
+singer = input("Who is your favourite singer?")
+if singer == "Harry Styles" or "Harry":
+    print("Great choice!")
+else:
+    print(singer +" is good, but Harry Styles is better")
+#==============================================================================
+ans = input("Do you want to do a Harry Styles quiz?")
+if ans == "No":
+    print("How rude!")
+elif ans == "Yes":
+#==============================================================================
+    q1 = input("What boyband was Harry Styles in?")
+    if q1 == "One Direction":
+        print("Correct!")
+        score = 1
+    elif q1 == "1D":
+        print("Correct!")
+        score = 1
+    elif q1 == "White Eskimo":
+        print("Correct!")
+        score = 1
+    else:
+        print("Incorrect")
+        score = 0
+#==============================================================================
+    q2 = input("What is Harry's birthday (write in format dd/mm/yyyy)")
+    if q2 == "01/02/1990":
+        print("Correct!")
+        score = score + 1
+    else:
+        print("Incorrect")
+#==============================================================================
+    q3 = input("What is Harry's favourite film?")
+    if q3 == "Love, Actually":
+        print("Correct!")
+        score = score + 1
+    elif q3 == "Love Actually":
+         print("Correct!")
+         score = score + 1
+    else:
+        print("Incorrect")
+#==============================================================================
+    q4 = input("What war film did Harry star in?")
+    if q4 == "Dunkirk":
+        print("Correct!")
+        score = score + 1
+    else:
+        print("Incorrect")
+#==============================================================================
+    q5 = input("What is Harry's mum's first name?")
+    if q5 == "Anne":
+        print("Correct!")
+        score = score + 1
+    else:
+        print("Incorrect")
+#==============================================================================
+    if score < 5:
+        ps = str(score)
+        print("You achieved " + ps)
+    if score ==  5:
+        print("Well done! You got everything correct!")
+        print("Entering quickfire round...")
+#==============================================================================
+        score =  0
+        print("Instructions:")
+        print("Your score has been reset to 0")
+        print("If you get a question incorrect, you will lose 1 point")
+        print("If you achieve below 0, you wil end the game.")
+#==============================================================================
+        while score <= 0:
+            qf1 = input("What is Harry's 2nd album called?")
+            if qf1 == "Fine Line":
+                print("Correct")
+                score = score + 1
+                print(score)
+            else:
+                print("Incorrect")
+                score = score - 1
+                print(score)
+#==============================================================================
+            qf2 = input("How old was Harry when he went on the X-Factor?")
+            if qf2 == "16":
+                print("Correct")
+                score = score + 1
+                print(score)
+            elif qf2 == "Sixteen":
+                print("Correct")
+                score = score + 1
+                print(score)
+            else:
+                print("Incorrect")
+                score = score - 1
+                print(score)
+#==============================================================================
+            qf3 = input("Finish the quote: 'This is a family show. _________?'")
+            if qf3 == "Or is it?":
+                print("Correct")
+                score = score + 1
+                print(score)
+            elif qf3 == "Or is it":
+                print("Correct")
+                score = score + 1
+                print(score)
+            else:
+                print("Incorrect")
+                score = score - 1
+                print(score)
+#==============================================================================
+            qf4 = input("What is Harry's middle name?'")
+            if qf4 == "Edward":
+                print("Correct")
+                score = score + 1
+                print(score)
+            else:
+                print("Incorrect")
+                score = score - 1
+                print(score)
+#==============================================================================
+            qf5 = input("What is Harry's blood type?'")
+            if qf5 == "B+":
+                print("Correct")
+                score = score + 1
+                print(score)
+            elif qf5 == "B positive":
+                print("Correct")
+                score = score + 1
+                print(score)
+            else:
+                print("Incorrect")
+                score = score - 1
+                print(score)
+#==============================================================================
+        if score < 0:
+            print("GAME OVER!")
+#==============================================================================
+        if score > 0:
+            if score < 5:
+                ps = str(score)
+        if score == 5:
+            print("Wow, that's full marks! Well done!")
+#==============================================================================
+            print("Entering Death Row...")
+            score =  0
+            print("Instructions:")
+            print("Your score has been reset to 0")
+            print("If you get a question incorrect, you will end the game")
+#==============================================================================
+            d1 = input("What characer does Harry play in the MCU (Marvel Cinematic Universe)?")
+            if d1 == "Starfox" or "Eros":
+                print("Correct!")
+                score = score + 1
+#==============================================================================
+                d2 = input("What does Harry say the best thing a girl can wear is?")
+                if d2 == "A smile" or "Smile":
+                    print("Correct!")
+                    score = score + 1
+#==============================================================================
+                    d3 = input("What did Harry dress up as for 2021's 'Harryween'?")
+                    if d3 == "Alice" or "Alice in Wonderland" or "A clown" or "Clown":
+                        print("Correct!")
+                        score = score + 1
+#==============================================================================
+                        d4 = input("Which singer does Harry have a crush on?")
+                        if d4 == "Adele":
+                            print("Correct!")
+                            score = score + 1
+#==============================================================================
+                            d5 = input("How many nipples does Harry have?")
+                            if d5 == "Four" or "4":
+                                print("Correct!")
+                                score = score + 1
+#==============================================================================
+                                if score == 5:
+                                    print("Oh ma gawd! You got everything correct!")
+                                    print("I think you dropped this [👑]")
+                                    print("Get your certificate here: [https://bit.ly/3lWyFzH]")
+#==============================================================================
+                            else:
+                                ps = str(score)
+                                print("Incorrect")
+                                print("You achieved " + score)
+                        else:
+                            ps = str(score)
+                            print("Incorrect")
+                            print("You achieved " + score)
+                    else:
+                        ps = str(score)
+                        print("Incorrect")
+                        print("You achieved " + score)
+                else:
+                    ps = str(score)
+                    print("Incorrect")
+                    print("You achieved " + score)
+            else:
+                print("Incorrect")
+#==============================================================================
+else:
+    termination = (ans.upper())
+    print("ERROR! CANNOT COMPUTE! UNKNOWN VARIABLE: [" + termination +"]")
+    print("TERMINATING QUIZ!")
